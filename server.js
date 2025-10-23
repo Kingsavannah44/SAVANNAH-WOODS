@@ -15,17 +15,28 @@ app.use(express.static('.')); // Serve static files
 // In-memory storage for reservations (in production, use a database)
 let reservations = [];
 
-// Email configuration
-const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-        user: 'shadsbrian@gmail.com', // Replace with your email
-        pass: 'Kipkemoi44' // Your app password
-    }
-});
+// Email configuration (disabled due to authentication issues)
+// const transporter = nodemailer.createTransport({
+//     service: 'gmail',
+//     auth: {
+//         user: 'shadsbrian@gmail.com', // Replace with your email
+//         pass: 'Kipkemoi44' // Your app password
+//     }
+// });
 
-// Function to send admin notification
+// Function to send admin notification (disabled)
 async function sendAdminNotification(reservation) {
+    // Email notifications disabled due to authentication issues
+    console.log('New reservation received:', reservation.name, reservation.email);
+    console.log('Check reservations.json for details');
+
+    // To enable email notifications:
+    // 1. Enable 2FA on Gmail account
+    // 2. Generate an app password from Google Account settings
+    // 3. Uncomment the email configuration above
+    // 4. Uncomment the email sending code below
+
+    /*
     const mailOptions = {
         from: 'shadsbrian@gmail.com',
         to: 'shadsbrian@gmail.com', // Admin email
@@ -49,9 +60,14 @@ async function sendAdminNotification(reservation) {
     } catch (error) {
         console.error('Error sending admin notification:', error);
     }
+    */
 }
 
 // Routes
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
 app.post('/reservations', async (req, res) => {
     try {
         const reservation = {
@@ -99,5 +115,5 @@ if (fs.existsSync('reservations.json')) {
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
     console.log('Reservations are stored locally in reservations.json');
-    console.log('Email notifications are enabled - admin will receive emails for new reservations');
+    console.log('Email notifications disabled - check reservations.json for new bookings');
 });
