@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - THE SAVANNAH WOODS</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>THE SAVANNAH WOODS</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu-hero">
+            <h1>Our Menu</h1>
+            <p>Discover the rich flavors of authentic African cuisine</p>
+        </section>
+
+        <section class="menu-controls">
+            <div class="search-container">
+                <input type="text" id="menu-search" placeholder="Search menu items..." class="search-input">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="main">Main Courses</button>
+                <button class="filter-btn" data-category="vegetarian">Vegetarian</button>
+                <button class="filter-btn" data-category="beverages">Beverages</button>
+                <button class="filter-btn" data-category="desserts">Desserts</button>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Main Courses</h2>
+            <div class="menu-grid">
+                <div class="menu-item" data-category="main">
+                    <img src="images/menu/nyama-choma.jpg" alt="Grilled Nyama Choma - Traditional Kenyan roasted meat" loading="lazy">
+                    <div class="menu-item-content">
+                        <h3>Nyama Choma</h3>
+                        <p>Grilled meat marinated in traditional spices, served with ugali and kachumbari.</p>
+                        <span class="price">$18.99</span>
+                        <button class="add-to-cart-btn" data-name="Nyama Choma" data-price="18.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="main">
+                    <img src="images/menu/pilau-rice.jpg" alt="Pilau Rice - Spiced East African rice dish" loading="lazy">
+                    <div class="menu-item-content">
+                        <h3>Pilau Rice</h3>
+                        <p>Fragrant spiced rice with tender meat, potatoes, and aromatic spices.</p>
+                        <span class="price">$15.99</span>
+                        <button class="add-to-cart-btn" data-name="Pilau Rice" data-price="15.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="main">
+                    <img src="images/menu/jollof-rice.jpg" alt="Jollof Rice - West African tomato rice dish" loading="lazy">
+                    <div class="menu-item-content">
+                        <h3>Jollof Rice</h3>
+                        <p>Fragrant rice cooked with tomatoes, peppers, and aromatic spices.</p>
+                        <span class="price">$12.99</span>
+                        <button class="add-to-cart-btn" data-name="Jollof Rice" data-price="12.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="main">
+                    <img src="images/menu/ugali.jpg" alt="Ugali - Traditional East African maize meal" loading="lazy">
+                    <div class="menu-item-content">
+                        <h3>Ugali</h3>
+                        <p>Traditional maize meal staple, served with stew or vegetables.</p>
+                        <span class="price">$8.99</span>
+                        <button class="add-to-cart-btn" data-name="Ugali" data-price="8.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="main">
+                    <img src="images/menu/matoke.jpg" alt="Matoke - Steamed East African bananas" loading="lazy">
+                    <div class="menu-item-content">
+                        <h3>Matoke</h3>
+                        <p>Steamed green bananas cooked with tomatoes, onions, and traditional spices.</p>
+                        <span class="price">$11.99</span>
+                        <button class="add-to-cart-btn" data-name="Matoke" data-price="11.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="main">
+                    <img src="images/menu/fish-curry.jpg" alt="Fish Curry - East African spiced fish dish" loading="lazy">
+                    <div class="menu-item-content">
+                        <h3>Fish Curry</h3>
+                        <p>Fresh fish simmered in coconut curry with East African spices and herbs.</p>
+                        <span class="price">$16.99</span>
+                        <button class="add-to-cart-btn" data-name="Fish Curry" data-price="16.99">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Vegetarian Dishes</h2>
+            <div class="menu-grid">
+                <div class="menu-item" data-category="vegetarian">
+                    <img src="images/menu/sukuma-wiki.jpg" alt="Sukuma Wiki - Traditional Kenyan collard greens" loading="lazy">
+                    <div class="menu-item-content">
+                        <h3>Sukuma Wiki</h3>
+                        <p>Collard greens cooked with tomatoes, onions, and traditional spices.</p>
+                        <span class="price">$9.99</span>
+                        <button class="add-to-cart-btn" data-name="Sukuma Wiki" data-price="9.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="vegetarian">
+                    <img src="images/menu/chapati.jpg" alt="Chapati - East African flatbread" loading="lazy">
+                    <div class="menu-item-content">
+                        <h3>Chapati</h3>
+                        <p>Flaky flatbread, perfect accompaniment to any meal.</p>
+                        <span class="price">$4.99</span>
+                        <button class="add-to-cart-btn" data-name="Chapati" data-price="4.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="vegetarian">
+                    <img src="images/menu/kachumbari.jpg" alt="Kachumbari - Fresh tomato and onion salad" loading="lazy">
+                    <div class="menu-item-content">
+                        <h3>Kachumbari</h3>
+                        <p>Fresh tomato and onion salad with cilantro and traditional dressing.</p>
+                        <span class="price">$6.99</span>
+                        <button class="add-to-cart-btn" data-name="Kachumbari" data-price="6.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="vegetarian">
+                    <img src="images/menu/vegetable-curry.jpg" alt="Vegetable Curry - Mixed vegetable curry" loading="lazy">
+                    <div class="menu-item-content">
+                        <h3>Vegetable Curry</h3>
+                        <p>Mixed seasonal vegetables in rich coconut curry sauce.</p>
+                        <span class="price">$10.99</span>
+                        <button class="add-to-cart-btn" data-name="Vegetable Curry" data-price="10.99">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu-grid">
+                <div class="menu-item" data-category="desserts">
+                    <img src="images/menu/mandazi.jpg" alt="Mandazi - East African fried dough" loading="lazy">
+                    <div class="menu-item-content">
+                        <h3>Mandazi</h3>
+                        <p>Crispy fried dough, perfect with tea or coffee.</p>
+                        <span class="price">$5.99</span>
+                        <button class="add-to-cart-btn" data-name="Mandazi" data-price="5.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="desserts">
+                    <img src="images/menu/fruit-salad.jpg" alt="Fresh Tropical Fruit Salad" loading="lazy">
+                    <div class="menu-item-content">
+                        <h3>Fresh Fruit Salad</h3>
+                        <p>Seasonal tropical fruits with mint and lime dressing.</p>
+                        <span class="price">$7.99</span>
+                        <button class="add-to-cart-btn" data-name="Fresh Fruit Salad" data-price="7.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="desserts">
+                    <img src="images/menu/coconut-rice-pudding.jpg" alt="Coconut Milk Rice Pudding" loading="lazy">
+                    <div class="menu-item-content">
+                        <h3>Coconut Rice Pudding</h3>
+                        <p>Creamy rice pudding made with coconut milk and cardamom.</p>
+                        <span class="price">$6.99</span>
+                        <button class="add-to-cart-btn" data-name="Coconut Rice Pudding" data-price="6.99">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Beverages</h2>
+        <div class="cart-container">
+            <button class="cart-btn" id="cart-btn">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count" id="cart-count">0</span>
+            </button>
+        </div>
+    </main>
+            <div class="menu-grid">
+                <div class="menu-item" data-category="beverages">
+                    <img src="images/menu/african-tea.jpg" alt="Traditional African Chai Tea" loading="lazy">
+                    <div class="menu-item-content">
+                        <h3>Traditional African Tea</h3>
+                        <p>Spiced tea with cardamom, cinnamon, and cloves.</p>
+                        <span class="price">$3.99</span>
+                        <button class="add-to-cart-btn" data-name="Traditional African Tea" data-price="3.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <img src="images/menu/fruit-juices.jpg" alt="Fresh Tropical Fruit Juices" loading="lazy">
+                    <div class="menu-item-content">
+                        <h3>Fresh Fruit Juices</h3>
+                        <p>Mango, passion fruit, and tamarind juices made fresh daily.</p>
+                        <span class="price">$4.99</span>
+                        <button class="add-to-cart-btn" data-name="Fresh Fruit Juices" data-price="4.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <img src="images/menu/coconut-water.jpg" alt="Fresh Coconut Water" loading="lazy">
+                    <div class="menu-item-content">
+                        <h3>Coconut Water</h3>
+                        <p>Refreshing young coconut water, naturally sweet and hydrating.</p>
+                        <span class="price">$3.49</span>
+                        <button class="add-to-cart-btn" data-name="Coconut Water" data-price="3.49">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <img src="images/menu/african-coffee.jpg" alt="Traditional African Coffee" loading="lazy">
+                    <div class="menu-item-content">
+                        <h3>African Coffee</h3>
+                        <p>Rich Ethiopian coffee with traditional roasting methods.</p>
+                        <span class="price">$4.49</span>
+                        <button class="add-to-cart-btn" data-name="African Coffee" data-price="4.49">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>THE SAVANNAH WOODS</h3>
+                <p>Authentic African cuisine in the heart of the city.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook" title="Follow us on Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram" title="Follow us on Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.017 0C8.396 0 7.996.014 6.79.067 5.579.12 4.748.309 4.045.62c-.76.313-1.404.743-2.043 1.382C1.363 2.64 1.093 3.28.82 4.04c-.31.753-.5 1.584-.553 2.795C.214 7.996.2 8.396.2 12.017s.014 4.021.067 5.227c.053 1.211.243 2.042.554 2.795.293.76.723 1.404 1.362 2.043.64.64 1.28.91 2.04 1.183.753.31 1.584.5 2.795.553 1.211.053 1.611.067 5.232.067s4.021-.014 5.227-.067c1.211-.053 2.042-.243 2.795-.554.76-.293 1.404-.723 2.043-1.362.64-.64.91-1.28 1.183-2.04.31-.753.5-1.584.553-2.795.053-1.211.067-1.611.067-5.232s-.014-4.021-.067-5.227c-.053-1.211-.243-2.042-.554-2.795-.293-.76-.723-1.404-1.362-2.043C21.36 1.363 20.72 1.093 19.96.82 19.207.51 18.376.32 17.165.267 15.954.214 15.554.2 12.017.2zm0 1.8c3.537 0 3.957.014 5.357.067 1.189.047 1.851.24 2.28.403.56.214 1.043.497 1.502.956.459.459.742.942.956 1.502.163.429.356 1.091.403 2.28.053 1.4.067 1.82.067 5.357s-.014 3.957-.067 5.357c-.047 1.189-.24 1.851-.403 2.28-.214.56-.497 1.043-.956 1.502-.459.459-.942.742-1.502.956-.429.163-1.091.356-2.28.403-1.4.053-1.82.067-5.357.067s-3.957-.014-5.357-.067c-1.189-.047-1.851-.24-2.28-.403-.56-.214-1.043-.497-1.502-.956-.459-.459-.742-.942-.956-1.502-.163-.429-.356-1.091-.403-2.28C1.88 15.974 1.866 15.554 1.866 12.017s.014-3.957.067-5.357c.047-1.189.24-1.851.403-2.28.214-.56.497-1.043.956-1.502.459-.459.942-.742 1.502-.956.429-.163 1.091-.356 2.28-.403 1.4-.053 1.82-.067 5.357-.067zm0 7.8c-2.136 0-3.867 1.731-3.867 3.867S9.881 16.351 12.017 16.351s3.867-1.731 3.867-3.867-1.731-3.867-3.867-3.867zm0 6.367c-1.387 0-2.517-1.13-2.517-2.517s1.13-2.517 2.517-2.517 2.517 1.13 2.517 2.517-1.13 2.517-2.517 2.517zm4.8-8.4c-.5 0-.9-.4-.9-.9s.4-.9.9-.9.9.4.9.9-.4.9-.9.9z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter" title="Follow us on Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Operating Hours</h3>
+                <p>Open Monday - Sunday</p>
+                <p>7:00 AM - 10:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 THE SAVANNAH WOODS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

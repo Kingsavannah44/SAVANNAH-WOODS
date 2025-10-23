@@ -1,0 +1,46 @@
+[
+  {
+    "id": "1761254876084",
+    "name": "Janet Cherotich",
+    "email": "shee@gmail.com",
+    "phone": "0715970249",
+    "date": "2025-11-30",
+    "time": "14:00",
+    "guests": "6",
+    "specialRequests": "hello",
+    "submittedAt": "2025-10-23T21:27:55.520Z"
+  },
+  {
+    "id": "1761257353251",
+    "name": "Janet Cherotich",
+    "email": "shee@gmail.com",
+    "phone": "0727998344",
+    "date": "2025-10-25",
+    "time": "13:00",
+    "guests": "4",
+    "specialRequests": "I need a platter for 4",
+    "submittedAt": "2025-10-23T22:09:13.181Z"
+  },
+  {
+    "id": "1761257725833",
+    "name": "Janet Cherotich",
+    "email": "kaisafestus11@gmail.com",
+    "phone": "0716955751",
+    "date": "2025-10-25",
+    "time": "07:00",
+    "guests": "4",
+    "specialRequests": "Platter",
+    "submittedAt": "2025-10-23T22:15:25.200Z"
+  },
+  {
+    "id": "1761258465176",
+    "name": "Janet Cherotich",
+    "email": "new@gmail.com",
+    "phone": "0748965322",
+    "date": "2025-10-25",
+    "time": "09:00",
+    "guests": "3",
+    "specialRequests": "Platter",
+    "submittedAt": "2025-10-23T22:27:45.106Z"
+  }
+]
